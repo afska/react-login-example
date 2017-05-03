@@ -1,0 +1,11 @@
+.checkbox > label {
+  margin-left: 3px;
+  color: gray;
+
+  cursor: pointer;
+  user-select: none;
+
+  font-weight: bold;
+  font-size: small;
+  vertical-align: middle;
+}

@@ -2,14 +2,19 @@
   width: 430px;
   height: 560px;
 
-  position: fixed;
-  top: 50%;
+  position: relative;
+  top: 100%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 25%);
+  display: table;
 
+  border-radius: 5px;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
 }
 
-.modal-content {
+.modal > div {
+  display: table-cell;
+  vertical-align: middle;
+
   padding: 30px 30px;
 }

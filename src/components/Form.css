@@ -1,0 +1,10 @@
+.form {
+
+}
+
+.form > .button-container {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  transform: translate(10%, -200%);
+}

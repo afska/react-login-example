@@ -1,0 +1,10 @@
+.link {
+  color: darkorange;
+  cursor: pointer;
+  user-select: none;
+  font-size: small;
+}
+
+.link:hover {
+  color: orange;
+}
