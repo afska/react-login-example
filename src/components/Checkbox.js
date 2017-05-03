@@ -8,7 +8,11 @@ class Checkbox extends Component {
     return (
       <div className="checkbox">
         <input id={this.props.id} type="checkbox" {...this.props} />
-        <label htmlFor={this.props.id}>{ this.props.label }</label>
+        <label htmlFor={this.props.id} className="checkbox-drawer"></label>
+
+        <label htmlFor={this.props.id} className="checkbox-label">
+          { this.props.label }
+        </label>
       </div>
     )
   }

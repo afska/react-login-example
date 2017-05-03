@@ -1,5 +1,48 @@
-.checkbox > label {
-  margin-left: 3px;
+.checkbox {
+  width: 21px;
+  position: relative;
+  display: inline;
+  border-radius: 5px;
+}
+
+.checkbox .checkbox-drawer {
+  cursor: pointer;
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  top: 0;
+  left: 0;
+  background: #eee;
+  border:1px solid #ddd;
+  border-radius: 5px;
+}
+
+.checkbox .checkbox-drawer:after {
+  opacity: 0.2;
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  background: transparent;
+  top: 6px;
+  left: 5px;
+  border: 3px solid #333;
+  border-top: none;
+  border-right: none;
+
+  transform: rotate(-45deg);
+}
+
+.checkbox .checkbox-drawer:hover::after {
+  opacity: 0.5;
+}
+
+.checkbox input[type=checkbox]:checked + .checkbox-drawer:after {
+  opacity: 1;
+}
+
+.checkbox > .checkbox-label {
+  margin-left: 10px;
   color: gray;
 
   cursor: pointer;
